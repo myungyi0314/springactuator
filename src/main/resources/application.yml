@@ -1,0 +1,36 @@
+management:
+  #  info:
+  #    java:
+  #      enabled: true
+  #    os:
+  #      enabled: true
+  #    env:
+  #      enabled: true
+  #  server:
+  #    port: 8080
+  #  endpoint:
+  #    shutdown:
+  #      enabled: true
+  #    health:
+  #      show-components: always
+  #show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#
+#info:
+#  app:
+#    name: hello-actuator
+#    company: yh
+#
+#logging:
+#  level:
+#    hello.controller: debug
+#
+
+# 톰캣의 최대 쓰레드, 사용 쓰레드 수를 포함
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true
